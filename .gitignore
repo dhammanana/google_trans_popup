@@ -1,0 +1,6 @@
+backup/
+build/
+dist/
+env/
+*.pyc
+pycache/
