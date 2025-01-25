@@ -50,10 +50,10 @@ def translate_text(text, target_lang="si"):
     try:
         response = requests.get(base_url, params=params)
         response.raise_for_status()
-        
+
         # Parse the response JSON
         data = response.json()
-        
+
         # Combine all translated segments
         translation = "\n".join([item[0] for item in data[0]])
         return translation
@@ -177,11 +177,13 @@ def translate_and_show():
 def on_activate():
     translate_and_show()
 
+def main():
+    # Register hotkey
+    hotkey = keyboard.GlobalHotKeys({"<ctrl>+.": on_activate})
 
-# Register hotkey
-hotkey = keyboard.GlobalHotKeys({"<ctrl>+.": on_activate})
+    # Run the hotkey listener
+    hotkey.start()
+    hotkey.join()
 
-# Run the hotkey listener
-hotkey.start()
-hotkey.join()
-
+if __name__ == '__main__':
+    main()

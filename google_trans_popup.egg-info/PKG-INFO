@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: google_trans_popup
+Version: 0.1
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pynput==1.7.7
+Requires-Dist: pyperclip==1.9.0
+Requires-Dist: requests==2.32.3
+Dynamic: classifier
+Dynamic: requires-dist

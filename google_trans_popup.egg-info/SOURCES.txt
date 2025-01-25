@@ -1,0 +1,9 @@
+setup.py
+google_trans_popup/__init__.py
+google_trans_popup/google_trans.py
+google_trans_popup.egg-info/PKG-INFO
+google_trans_popup.egg-info/SOURCES.txt
+google_trans_popup.egg-info/dependency_links.txt
+google_trans_popup.egg-info/entry_points.txt
+google_trans_popup.egg-info/requires.txt
+google_trans_popup.egg-info/top_level.txt

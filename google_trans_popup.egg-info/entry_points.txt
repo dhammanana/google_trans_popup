@@ -1,0 +1,2 @@
+[console_scripts]
+googletrans = google_trans_popup.google_trans:main
