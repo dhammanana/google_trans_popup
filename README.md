@@ -16,9 +16,6 @@ Google Translate Popup is a Python-based tool that allows you to quickly transla
 
 To install the package, you can use `pip` to install it directly from the GitHub repository:
 
-bash
-
-CopyEdit
 
 `pip install git+https://github.com/dhammanana/google_trans_popup.git`
 
@@ -28,9 +25,6 @@ CopyEdit
 
 After installation, you can run the tool by using the following command:
 
-bash
-
-CopyEdit
 
 `googletrans`
 
@@ -46,9 +40,6 @@ CopyEdit
 
 First, ensure you have `PyInstaller` installed. You can install it with:
 
-bash
-
-CopyEdit
 
 `pip install pyinstaller`
 
@@ -58,9 +49,6 @@ CopyEdit
 
 Navigate to the root directory of your project (where `google_trans.py` is located). Run the following command:
 
-bash
-
-CopyEdit
 
 `pyinstaller --onefile --name googletrans google_trans_popup/google_trans.py`
 
@@ -76,7 +64,10 @@ Once the build process is complete, the executable will be located in the `dist/
 
 CopyEdit
 
-`dist/ └── googletrans.exe`
+```
+dist/
+└── googletrans.exe
+```
 
 ---
 
@@ -95,13 +86,9 @@ CopyEdit
 ### Notes for Windows Users
 
 1. **Hotkey Compatibility**: Ensure your system supports global hotkeys (used by the script for `Ctrl + .`).
-2. **Include Required Files**: If your script depends on additional files (e.g., `config.txt`), you may need to package them with the executable. You can include them by using the `--add-data` option with `pyinstaller`.
 
 Example:
 
-bash
-
-CopyEdit
 
 `pyinstaller --onefile --name googletrans --add-data "google_trans_popup/config.txt;google_trans_popup" google_trans_popup/google_trans.py`
 
@@ -122,28 +109,9 @@ The package automatically installs the required dependencies. However, here’s 
 ### Additional Notes:
 
 - On **Linux**, you may need to install `xclip` if it’s not already installed:
-    
-    bash
-    
-    CopyEdit
-    
+
     `sudo apt install xclip`
-    
+
 
 ---
 
-## Contributing
-
-If you'd like to contribute to the project:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
